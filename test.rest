@@ -1,0 +1,53 @@
+
+# Create Book1
+###
+POST http://localhost:5000
+Content-Type: application/json
+
+{
+    "book":{
+        "author": "Author1",
+        "description":"Desc1",
+        "title": "Title1"
+
+    }
+}
+
+
+# Create Book2
+###
+POST http://localhost:5000
+Content-Type: application/json
+
+{
+    "book":{
+        "author": "Author2",
+        "description":"Desc2",
+        "title": "Title2"
+
+    }
+}
+
+
+#Get all books
+###
+GET http://localhost:5000
+
+
+# Modify title of book1
+###
+PUT http://localhost:5000/64470cab964ec4b8474083c6
+Content-Type: application/json
+
+{
+    "book":{
+        "_id": "64470cab964ec4b8474083c6",
+      "title": "Title1 changed",
+      "author": "Author1 changed"
+    }
+}
+
+
+### Delete book 1
+
+DELETE http://localhost:5000/64470cab964ec4b8474083c6
