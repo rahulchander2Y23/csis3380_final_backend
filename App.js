@@ -4,8 +4,8 @@ const PORT_NUM = 5000
 
 COLLECTION_NAME = '300371570-rahul'
 DB_NAME = 'BookList'
-//DB_SERVER = 'mongodb+srv://db_user:db_user2023@cluster0.oqakgk4.mongodb.net/'
-DB_SERVER = 'mongodb://localhost:27017/'
+DB_SERVER = 'mongodb+srv://db_user:db_user2023@cluster0.oqakgk4.mongodb.net/'
+//DB_SERVER = 'mongodb://localhost:27017/'
 
 const app = express()
 
